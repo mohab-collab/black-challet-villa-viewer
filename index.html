@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Challet Villa — Backyard scan viewer</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": {
+  "three": "./vendor/three/build/three.module.js",
+  "three/addons/": "./vendor/three/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="app"></div>
+<div id="loading"><div class="bar"><div id="progress"></div></div><span id="loading-text">Loading scan…</span></div>
+<div id="hud">
+  <div id="mode-label">Orbit</div>
+  <div id="pos"></div>
+  <div class="help" id="help-orbit">Left-drag rotate · Right-drag pan · Wheel zoom · Double-click to set pivot · <b>F</b> fly mode</div>
+  <div class="help" id="help-fly" hidden>Drag to look · <b>W A S D</b> move · <b>Q / E</b> down / up · <b>Shift</b> fast · Wheel speed · <b>F</b> orbit mode</div>
+</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>

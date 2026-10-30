@@ -1,0 +1,13 @@
+html, body { margin: 0; height: 100%; overflow: hidden; background: #111; font: 13px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #e8e7e2; }
+#app { position: fixed; inset: 0; }
+#app canvas { display: block; outline: none; }
+#loading { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; background: #111; z-index: 10; transition: opacity .4s; }
+#loading.done { opacity: 0; pointer-events: none; }
+#loading .bar { width: 260px; height: 4px; background: #333; border-radius: 2px; overflow: hidden; }
+#progress { height: 100%; width: 0; background: #7fb3df; transition: width .15s; }
+#hud { position: fixed; left: 12px; bottom: 12px; max-width: min(560px, calc(100vw - 300px)); background: rgba(20, 20, 18, .72); border: 1px solid #33342f; border-radius: 8px; padding: 8px 10px; pointer-events: none; z-index: 5; }
+#mode-label { font-weight: 600; color: #7fb3df; }
+#pos { font: 12px ui-monospace, Menlo, monospace; color: #9b9a94; margin: 2px 0 4px; }
+.help { color: #c9c8c2; }
+.help b { color: #fff; }
+.lil-gui.root { --width: 290px; max-height: calc(100vh - 16px); }
